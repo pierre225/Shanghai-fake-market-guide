@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:shanghai/AdvicesList.dart';
 import 'package:shanghai/ConvertCurrency.dart';
 import 'package:shanghai/PriceList.dart';
+import 'package:shanghai/VocabularyList.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -15,7 +17,7 @@ void main() {
                     title: "Conseils",
                     titleColor: Colors.black,
                     imageUri: "ic_commandments.png",
-                    nextPage: PriceList()),
+                    nextPage: AdviceList()),
                 MainButton(
                     background: Colors.red,
                     title: "Locations",
@@ -33,9 +35,9 @@ void main() {
                     title: "Vocabulaire",
                     titleColor: Colors.black,
                     imageUri: "talk.png",
-                    nextPage: PriceList()),
+                    nextPage: VocabularyList()),
                 MainButton(
-                    background: Colors.yellow,
+                    background: Colors.amber,
                     title: "Devises",
                     titleColor: Colors.black,
                     imageUri: "convert.png",

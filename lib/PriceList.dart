@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shanghai/RoundBackground.dart';
+import 'package:shanghai/common/RoundBackground.dart';
 
 class PriceList extends StatelessWidget {
   @override

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class RoundBackground extends StatelessWidget {
   final Color outsideColor;
   final Color insideColor;
-  final Row child;
+  final Container child;
   final double radius;
 
   const RoundBackground(
