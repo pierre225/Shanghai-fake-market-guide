@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 class VocabularyList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return null;
+    return Scaffold(
+      appBar: AppBar(title: Text("Vocabulary"), backgroundColor: Colors.blueAccent,),
+      body: ,
+    );
   }
 
 }

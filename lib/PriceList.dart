@@ -134,36 +134,38 @@ class PriceItem extends StatelessWidget {
         radius: 25,
         insideColor: Colors.white,
         outsideColor: outsideColor,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(left: 25),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    itemName,
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  Text(price + " RMB",
+        child: Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      itemName,
                       style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.black87,
-                          fontWeight: FontWeight.normal,
-                          fontStyle: FontStyle.italic))
-                ],
+                          fontSize: 20,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Text(price + " RMB",
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black87,
+                            fontWeight: FontWeight.normal,
+                            fontStyle: FontStyle.italic))
+                  ],
+                ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(right: 25, top: 5, bottom: 5),
-              child: Image.asset("assets/items/" + imageUri,
-                  width: 65, height: 65),
-            )
-          ],
+              Padding(
+                padding: const EdgeInsets.only(right: 25, top: 5, bottom: 5),
+                child: Image.asset("assets/items/" + imageUri,
+                    width: 65, height: 65),
+              )
+            ],
+          ),
         ),
       ),
     );
