@@ -28,90 +28,10 @@ class PriceList extends StatelessWidget {
                   imageUri: "ic_film.png",
                   price: "40",
                   outsideColor: Colors.green),
-              PriceItem(
-                  itemName: "coat",
-                  imageUri: "ic_coat.png",
-                  price: "60",
-                  outsideColor: Colors.green),
-              PriceItem(
-                  itemName: "flashlight",
-                  imageUri: "ic_flashlight.png",
-                  price: "90",
-                  outsideColor: Colors.green),
-              PriceItem(
-                  itemName: "crocs",
-                  imageUri: "ic_crocs.png",
-                  price: "8000",
-                  outsideColor: Colors.green),
-              PriceItem(
-                  itemName: "crocs",
-                  imageUri: "ic_crocs.png",
-                  price: "8000",
-                  outsideColor: Colors.green),
-              PriceItem(
-                  itemName: "crocs",
-                  imageUri: "ic_crocs.png",
-                  price: "8000",
-                  outsideColor: Colors.green),
-              PriceItem(
-                  itemName: "crocs",
-                  imageUri: "ic_crocs.png",
-                  price: "8000",
-                  outsideColor: Colors.green),
-              PriceItem(
-                  itemName: "crocs",
-                  imageUri: "ic_crocs.png",
-                  price: "8000",
-                  outsideColor: Colors.green),
-              PriceItem(
-                  itemName: "hoodies",
-                  imageUri: "ic_hoodies.png",
-                  price: "4",
-                  outsideColor: Colors.green),
-              Container(
-                  child: Text("Electronics",
-                      textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
-                  color: Colors.red),
-              PriceItem(
-                  itemName: "crocs",
-                  imageUri: "ic_crocs.png",
-                  price: "8000",
-                  outsideColor: Colors.red),
-              PriceItem(
-                  itemName: "crocs",
-                  imageUri: "ic_crocs.png",
-                  price: "8000",
-                  outsideColor: Colors.red),
-              PriceItem(
-                  itemName: "crocs",
-                  imageUri: "ic_crocs.png",
-                  price: "8000",
-                  outsideColor: Colors.red),
-              PriceItem(
-                  itemName: "crocs",
-                  imageUri: "ic_crocs.png",
-                  price: "8000",
-                  outsideColor: Colors.red),
-              PriceItem(
-                  itemName: "crocs",
-                  imageUri: "ic_crocs.png",
-                  price: "8000",
-                  outsideColor: Colors.red),
-              PriceItem(
-                  itemName: "crocs",
-                  imageUri: "ic_crocs.png",
-                  price: "8000",
-                  outsideColor: Colors.red),
-              PriceItem(
-                  itemName: "crocs",
-                  imageUri: "ic_crocs.png",
-                  price: "8000",
-                  outsideColor: Colors.red),
             ],
           ),
-        ));
+        )
+    );
   }
 }
 

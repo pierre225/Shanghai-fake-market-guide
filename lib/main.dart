@@ -14,7 +14,7 @@ void main() {
               children: <Widget>[
                 MainButton(
                     background: Colors.blueGrey,
-                    title: "Conseils",
+                    title: "Advices",
                     titleColor: Colors.black,
                     imageUri: "ic_commandments.png",
                     nextPage: AdviceList()),
@@ -32,13 +32,13 @@ void main() {
               children: <Widget>[
                 MainButton(
                     background: Colors.blue,
-                    title: "Vocabulaire",
+                    title: "Vocabulary",
                     titleColor: Colors.black,
                     imageUri: "talk.png",
                     nextPage: VocabularyList()),
                 MainButton(
                     background: Colors.amber,
-                    title: "Devises",
+                    title: "Currencies",
                     titleColor: Colors.black,
                     imageUri: "convert.png",
                     nextPage: ConvertCurrency()),
@@ -50,7 +50,7 @@ void main() {
               children: <Widget>[
                 MainButton(
                     background: Colors.green,
-                    title: "Liste des prix",
+                    title: "Price list",
                     titleColor: Colors.black,
                     imageUri: "list.png",
                     nextPage: PriceList()),
