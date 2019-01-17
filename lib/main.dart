@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shanghai/AdvicesList.dart';
 import 'package:shanghai/ConvertCurrency.dart';
+import 'package:shanghai/LocationList.dart';
 import 'package:shanghai/PriceList.dart';
 import 'package:shanghai/VocabularyList.dart';
 
@@ -23,7 +24,7 @@ void main() {
                     title: "Locations",
                     titleColor: Colors.black,
                     imageUri: "marker.png",
-                    nextPage: PriceList()),
+                    nextPage: LocationList()),
               ],
             ),
           ),

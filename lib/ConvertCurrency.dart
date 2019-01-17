@@ -24,15 +24,23 @@ class _ConvertCurrencyState extends State<ConvertCurrency> {
 
     _rates = new Map<String, double>();
     _rates.putIfAbsent("eur_rate", () => 0.14285714285);
+    _rates.putIfAbsent("gbp_rate", () => 0.115204);
+    _rates.putIfAbsent("dol_rate", () => 0.147933);
+    _rates.putIfAbsent("yen_rate", () => 16.0457);
 
     super.initState();
   }
 
   String convertCurrency(String value, double rate) {
-    if (!value.isEmpty) {
-      return (double.parse(value) * rate).toString();
+    String result = "no data";
+    if (value.isNotEmpty) {
+      try {
+        result = (double.parse(value) * rate).toStringAsFixed(2);
+      } catch(e) {
+        result = "Invalid input";
+      }
     }
-    return "No data";
+    return result;
   }
 
   @override
@@ -47,6 +55,9 @@ class _ConvertCurrencyState extends State<ConvertCurrency> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               _CurrencyResult(convertCurrency(_inputValue, _rates["eur_rate"]), "EUR", _rates["eur_rate"].toStringAsFixed(2)),
+              _CurrencyResult(convertCurrency(_inputValue, _rates["gbp_rate"]), "GBP", _rates["gbp_rate"].toStringAsFixed(2)),
+              _CurrencyResult(convertCurrency(_inputValue, _rates["dol_rate"]), "GBP", _rates["dol_rate"].toStringAsFixed(2)),
+              _CurrencyResult(convertCurrency(_inputValue, _rates["yen_rate"]), "YEN", _rates["yen_rate"].toStringAsFixed(2)),
               RoundBackground(
                 radius: 20,
                 outsideColor: Colors.amberAccent,
@@ -54,7 +65,7 @@ class _ConvertCurrencyState extends State<ConvertCurrency> {
                 child: Container(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-                    child: TextField(
+                    child: TextField(autofocus: true,
                       decoration: InputDecoration(hintText: "Chinese RMB value", border: InputBorder.none),
                       keyboardType: TextInputType.number,
                       controller: _textController,

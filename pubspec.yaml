@@ -13,7 +13,7 @@ environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
 
 dependencies:
-  audioplayers: ^0.7.8
+  audioplayers: 0.8.0
   flutter:
     sdk: flutter
 
@@ -39,6 +39,7 @@ flutter:
   assets:
     - assets/items/
     - assets/audio/
+    - assets/locations/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

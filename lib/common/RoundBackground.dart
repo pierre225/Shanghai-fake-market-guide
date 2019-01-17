@@ -17,7 +17,7 @@ class RoundBackground extends StatelessWidget {
     return Container(
       color: outsideColor,
       child: Padding(
-        padding: const EdgeInsets.only(right: 20, left: 20, top: 8, bottom: 8),
+        padding: const EdgeInsets.only(right: 20, left: 20, top: 5, bottom: 5),
         child: Container(
           decoration: new BoxDecoration(
               color: insideColor,
